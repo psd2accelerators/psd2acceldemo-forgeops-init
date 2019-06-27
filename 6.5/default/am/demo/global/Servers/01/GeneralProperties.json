@@ -33,11 +33,11 @@
     },
     "amconfig.header.debug" : {
       "com.iplanet.services.debug.level" : {
-        "value" : "error",
+        "value" : "message",
         "inherited" : false
       },
       "com.sun.services.debug.mergeall" : {
-        "value" : "off",
+        "value" : "on",
         "inherited" : false
       },
       "com.iplanet.services.debug.directory" : {
