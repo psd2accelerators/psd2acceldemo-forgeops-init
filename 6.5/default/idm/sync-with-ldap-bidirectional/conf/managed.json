@@ -440,8 +440,7 @@
                 ]
             },
             "iconClass" : "fa fa-database",
-            "type" : "Managed Object",
- 
+            "type" : "Managed Object"
         },
         {
             "name" : "ObDomesticPayment",
