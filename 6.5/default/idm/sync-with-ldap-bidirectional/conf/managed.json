@@ -1045,7 +1045,217 @@
                     "roles"
                 ]
             }
+        },
+        {
+            "name" : "ObAccountAccess",
+            "schema" : {
+                "$schema" : "http://forgerock.org/json-schema#",
+                "type" : "object",
+                "title" : "OB Account Access",
+                "description" : "OB Account Access Intent",
+                "icon" : "fa-institution",
+                "properties" : {
+                    "Data" : {
+                        "title" : "Data",
+                        "type" : "object",
+                        "viewable" : true,
+                        "searchable" : false,
+                        "userEditable" : true,
+                        "properties" : {
+                            "ConsentId" : {
+                                "title" : "Account Access Consent Id",
+                                "type" : "string",
+                                "viewable" : true,
+                                "searchable" : true,
+                                "userEditable" : true,
+                                "description" : null,
+                                "minLength" : null,
+                                "isVirtual" : false
+                            },
+                            "CreationDateTime" : {
+                                "title" : "Creation Date Time",
+                                "type" : "string",
+                                "viewable" : true,
+                                "searchable" : true,
+                                "userEditable" : true
+                            },
+                            "Status" : {
+                                "title" : "Account Access Status",
+                                "type" : "string",
+                                "viewable" : true,
+                                "searchable" : true,
+                                "userEditable" : true
+                            },
+                            "StatusUpdateDateTime" : {
+                                "title" : "Status Update Date Time",
+                                "type" : "string",
+                                "viewable" : true,
+                                "searchable" : true,
+                                "userEditable" : true,
+                                "description" : null,
+                                "minLength" : null,
+                                "isVirtual" : false
+                            },
+                            "Permissions" : {
+                                "title" : "Permission",
+                                "type" : "array",
+                                "viewable" : true,
+                                "searchable" : false,
+                                "userEditable" : true,
+                                "items" : {
+                                    "type" : "string"
+                                }
+                            },
+                            "ExpirationDateTime" : {
+                                "title" : "Expiration Date Time",
+                                "type" : "string",
+                                "viewable" : true,
+                                "searchable" : false,
+                                "userEditable" : true,
+                                "description" : null,
+                                "minLength" : null,
+                                "isVirtual" : false
+                            },
+                            "TransactionFromDateTime" : {
+                                "title" : "Transaction From Date Time",
+                                "type" : "string",
+                                "viewable" : true,
+                                "searchable" : false,
+                                "userEditable" : true,
+                                "description" : null,
+                                "minLength" : null,
+                                "isVirtual" : false
+                            },
+                            "TransactionToDateTime" : {
+                                "title" : "Transaction To Date Time",
+                                "type" : "string",
+                                "viewable" : true,
+                                "searchable" : false,
+                                "userEditable" : true,
+                                "description" : null,
+                                "minLength" : null,
+                                "isVirtual" : false
+                            }
+                        },
+                        "order" : [
+                            "ConsentId",
+                            "CreationDateTime",
+                            "Status",
+                            "StatusUpdateDateTime",
+                            "Permissions",
+                            "ExpirationDateTime",
+                            "TransactionFromDateTime",
+                            "TransactionToDateTime"
+                        ],
+                        "description" : null,
+                        "isVirtual" : false,
+                        "nullable" : false
+                    },
+                    "Risk" : {
+                        "title" : "Risk",
+                        "type" : "object",
+                        "viewable" : true,
+                        "searchable" : false,
+                        "userEditable" : true,
+                        "properties" : { },
+                        "order" : [ ]
+                    },
+                    "Tpp" : {
+                        "title" : "Tpp",
+                        "type" : "relationship",
+                        "viewable" : true,
+                        "searchable" : false,
+                        "userEditable" : false,
+                        "returnByDefault" : false,
+                        "reverseRelationship" : true,
+                        "reversePropertyName" : "AccountAccessIntents",
+                        "validate" : false,
+                        "properties" : {
+                            "_ref" : {
+                                "type" : "string"
+                            },
+                            "_refProperties" : {
+                                "type" : "object",
+                                "properties" : {
+                                    "_id" : {
+                                        "type" : "string",
+                                        "required" : false,
+                                        "propName" : "_id"
+                                    }
+                                }
+                            }
+                        },
+                        "resourceCollection" : [
+                            {
+                                "path" : "managed/obTpp",
+                                "label" : "ObTpp",
+                                "query" : {
+                                    "queryFilter" : "true",
+                                    "fields" : [
+                                        "name",
+                                        "identifier"
+                                    ],
+                                    "sortKeys" : [ ]
+                                }
+                            }
+                        ],
+                        "description" : null
+                    },
+                    "User" : {
+                        "title" : "User",
+                        "type" : "relationship",
+                        "viewable" : true,
+                        "searchable" : false,
+                        "userEditable" : false,
+                        "returnByDefault" : false,
+                        "reverseRelationship" : true,
+                        "reversePropertyName" : "AccountAccess",
+                        "validate" : false,
+                        "properties" : {
+                            "_ref" : {
+                                "type" : "string"
+                            },
+                            "_refProperties" : {
+                                "type" : "object",
+                                "properties" : {
+                                    "_id" : {
+                                        "type" : "string",
+                                        "required" : false,
+                                        "propName" : "_id"
+                                    }
+                                }
+                            }
+                        },
+                        "resourceCollection" : [
+                            {
+                                "path" : "managed/user",
+                                "label" : "User",
+                                "query" : {
+                                    "queryFilter" : "true",
+                                    "fields" : [
+                                        "userName",
+                                        "mail"
+                                    ],
+                                    "sortKeys" : [ ]
+                                }
+                            }
+                        ],
+                        "description" : null
+                    }
+                },
+                "order" : [
+                    "Data",
+                    "Risk",
+                    "Tpp",
+                    "User"
+                ],
+                "required" : [
+                    "Data",
+                    "Risk"
+                ]
+            },
+            "iconClass" : "fa fa-database",
+            "type" : "Managed Object"
         }
-
     ]
 }
