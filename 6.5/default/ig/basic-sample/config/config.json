@@ -17,7 +17,7 @@
         {
           "condition": "${request.uri.host != env['MY_POD_IP']}",
           "handler": {
-            "name": "_default",
+            "name": "_router",
             "type": "Router",
             "config": {
               "scanInterval": "disabled",
