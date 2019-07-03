@@ -60,13 +60,14 @@
     },
     "coreOAuth2ClientConfig" : {
       "userpassword" : null,
-      "userpassword-encrypted" : "AAAAA0FFUwIQ/afg2cVG3A7NbyhXJ73PGsmp1hTU3WJ+o/3ThYovzZdgTPo0Uy5sHw==",
+      "userpassword-encrypted" : "AAAAA0FFUwIQN9o0TIVa14O/kDLMWcAF8E7CzqB+hH6TLuhlIngi/R28Jxqd23Pcrg==",
       "authorizationCodeLifetime" : 0,
       "accessTokenLifetime" : 0,
       "defaultScopes" : [ "payments" ],
       "clientName" : [ ],
       "clientType" : "Confidential",
       "scopes" : [ "payments", "am-introspect-all-tokens" ],
+      "agentgroup" : null,
       "refreshTokenLifetime" : 0,
       "redirectionUris" : [ "https://www.google.com" ],
       "status" : "Active"

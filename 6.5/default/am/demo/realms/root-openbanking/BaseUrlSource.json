@@ -8,6 +8,7 @@
   },
   "data" : {
     "_id" : "",
+    "contextPath" : "",
     "fixedValue" : "https://openig.psd2acceldemo.fridam.aeet-forgerock.com",
     "source" : "FIXED_VALUE",
     "extensionClassName" : "org.forgerock.openam.services.baseurl.BaseURLProvider",

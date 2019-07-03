@@ -3,11 +3,11 @@
     "realm" : "/openbanking",
     "amsterVersion" : "6.5.1",
     "entityType" : "OAuth2Clients",
-    "entityId" : "iss-client",
+    "entityId" : "test",
     "pathParams" : { }
   },
   "data" : {
-    "_id" : "iss-client",
+    "_id" : "test",
     "signEncOAuth2ClientConfig" : {
       "idTokenEncryptionMethod" : "A128CBC-HS256",
       "jwkSet" : null,
@@ -33,20 +33,20 @@
       "clientJwtPublicKey" : null
     },
     "advancedOAuth2ClientConfig" : {
-      "grantTypes" : [ "authorization_code" ],
+      "grantTypes" : [ "authorization_code", "password" ],
       "updateAccessToken" : null,
       "requestUris" : [ ],
       "clientUri" : [ ],
       "mixUpMitigation" : false,
       "logoUri" : [ ],
-      "tokenEndpointAuthMethod" : "client_secret_basic",
+      "tokenEndpointAuthMethod" : "client_secret_post",
       "sectorIdentifierUri" : null,
       "isConsentImplied" : false,
       "contacts" : [ ],
       "responseTypes" : [ "code", "token", "id_token", "code token", "token id_token", "code id_token", "code token id_token", "device_code", "device_code id_token" ],
       "policyUri" : [ ],
       "descriptions" : [ ],
-      "subjectType" : "Public",
+      "subjectType" : "Pairwise",
       "name" : [ ]
     },
     "coreOpenIDClientConfig" : {
@@ -60,14 +60,13 @@
     },
     "coreOAuth2ClientConfig" : {
       "userpassword" : null,
-      "userpassword-encrypted" : "AAAAA0FFUwIQ067fFclK3Ix9B/R609pK2esfYWebRoK7Pd5OpcT1IBEGQXD+pQbzFg==",
+      "userpassword-encrypted" : "AAAAA0FFUwIQtCv9XV4BuVIEnbOZAYJ6iH+sXgfvLLRqXe6EXSJHFU88N9LG+H3ang==",
       "authorizationCodeLifetime" : 0,
       "accessTokenLifetime" : 0,
-      "defaultScopes" : [ "openid" ],
-      "clientName" : [ "ISS Client Display Name" ],
+      "defaultScopes" : [ ],
+      "clientName" : [ ],
       "clientType" : "Confidential",
-      "scopes" : [ "openid", "payments", "accounts" ],
-      "agentgroup" : null,
+      "scopes" : [ "openid" ],
       "refreshTokenLifetime" : 0,
       "redirectionUris" : [ "https://www.google.com" ],
       "status" : "Active"
