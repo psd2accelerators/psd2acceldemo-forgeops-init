@@ -2022,7 +2022,219 @@
             },
             "iconClass" : "fa fa-database",
             "type" : "Managed Object"
+        },
+        {
+            "name" : "obTpp",
+            "schema" : {
+                "$schema" : "http://forgerock.org/json-schema#",
+                "type" : "object",
+                "title" : "OBTpp",
+                "description" : "OB TPP Details",
+                "icon" : "fa-users",
+                "properties" : {
+                    "name" : {
+                        "title" : "TPP Name",
+                        "type" : "string",
+                        "viewable" : true,
+                        "searchable" : true,
+                        "userEditable" : true,
+                        "description" : null,
+                        "minLength" : null,
+                        "isVirtual" : false
+                    },
+                    "identifier" : {
+                        "title" : "AM Client ID",
+                        "type" : "string",
+                        "viewable" : true,
+                        "searchable" : true,
+                        "userEditable" : true,
+                        "description" : null,
+                        "minLength" : null,
+                        "isVirtual" : false,
+                        "policies" : [
+                            {
+                                "policyId" : "unique",
+                                "params" : { }
+                            }
+                        ],
+                        "encryption" : {
+                            "purpose" : null
+                        }
+                    },
+                    "certId" : {
+                        "title" : "Certificate Identifier",
+                        "type" : "string",
+                        "viewable" : true,
+                        "searchable" : true,
+                        "userEditable" : true
+                    },
+                    "created" : {
+                        "title" : "Timestamp",
+                        "type" : "string",
+                        "viewable" : true,
+                        "searchable" : true,
+                        "userEditable" : true
+                    },
+                    "_id" : {
+                        "title" : "Internal IDM Identifier",
+                        "type" : "string",
+                        "viewable" : true,
+                        "searchable" : false,
+                        "userEditable" : false,
+                        "description" : null,
+                        "minLength" : null,
+                        "isVirtual" : false
+                    },
+                    "ssas" : {
+                        "title" : "TPP Ssas",
+                        "viewable" : true,
+                        "searchable" : false,
+                        "userEditable" : false,
+                        "returnByDefault" : true,
+                        "type" : "array",
+                        "items" : {
+                            "type" : "relationship",
+                            "reverseRelationship" : true,
+                            "reversePropertyName" : "obTpp",
+                            "validate" : false,
+                            "properties" : {
+                                "_ref" : {
+                                    "type" : "string"
+                                },
+                                "_refProperties" : {
+                                    "type" : "object",
+                                    "properties" : {
+                                        "_id" : {
+                                            "type" : "string",
+                                            "required" : false,
+                                            "propName" : "_id"
+                                        }
+                                    }
+                                }
+                            },
+                            "resourceCollection" : [
+                                {
+                                    "path" : "managed/obTppSsa",
+                                    "label" : "ObTppSsa",
+                                    "query" : {
+                                        "queryFilter" : "true",
+                                        "fields" : [
+                                            "ssa"
+                                        ],
+                                        "sortKeys" : [ ]
+                                    }
+                                }
+                            ]
+                        },
+                        "description" : "TPP Software Statement Assertions"
+                    },
+                    "domesticPayments" : {
+                        "description" : null,
+                        "title" : "DomesticPayments",
+                        "viewable" : true,
+                        "searchable" : false,
+                        "userEditable" : false,
+                        "policies" : [ ],
+                        "returnByDefault" : false,
+                        "minLength" : null,
+                        "pattern" : null,
+                        "type" : "array",
+                        "items" : {
+                            "type" : "relationship",
+                            "reverseRelationship" : true,
+                            "reversePropertyName" : "Tpp",
+                            "validate" : false,
+                            "properties" : {
+                                "_ref" : {
+                                    "type" : "string"
+                                },
+                                "_refProperties" : {
+                                    "type" : "object",
+                                    "properties" : {
+                                        "_id" : {
+                                            "type" : "string",
+                                            "required" : false,
+                                            "propName" : "_id"
+                                        }
+                                    }
+                                }
+                            },
+                            "resourceCollection" : [
+                                {
+                                    "path" : "managed/ObDomesticPayment",
+                                    "label" : "ObDomesticPayment",
+                                    "query" : {
+                                        "queryFilter" : "true",
+                                        "fields" : [ ],
+                                        "sortKeys" : [ ]
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    "AccountAccessIntents" : {
+                        "description" : null,
+                        "title" : "AccountAccessIntents",
+                        "viewable" : true,
+                        "searchable" : false,
+                        "userEditable" : false,
+                        "policies" : [ ],
+                        "returnByDefault" : false,
+                        "minLength" : null,
+                        "pattern" : null,
+                        "type" : "array",
+                        "items" : {
+                            "type" : "relationship",
+                            "reverseRelationship" : true,
+                            "reversePropertyName" : "Tpp",
+                            "validate" : false,
+                            "properties" : {
+                                "_ref" : {
+                                    "type" : "string"
+                                },
+                                "_refProperties" : {
+                                    "type" : "object",
+                                    "properties" : {
+                                        "_id" : {
+                                            "type" : "string",
+                                            "required" : false,
+                                            "propName" : "_id"
+                                        }
+                                    }
+                                }
+                            },
+                            "resourceCollection" : [
+                                {
+                                    "path" : "managed/ObAccountAccess",
+                                    "label" : "ObAccountAccess",
+                                    "query" : {
+                                        "queryFilter" : "true",
+                                        "fields" : [ ],
+                                        "sortKeys" : [ ]
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                },
+                "order" : [
+                    "name",
+                    "identifier",
+                    "certId",
+                    "created",
+                    "_id",
+                    "ssas",
+                    "domesticPayments",
+                    "AccountAccessIntents"
+                ],
+                "required" : [
+                    "identifier"
+                ]
+            },
+            "iconClass" : "fa fa-database",
+            "type" : "Managed Object"
         }
+
 
     ]
 }
