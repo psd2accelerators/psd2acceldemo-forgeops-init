@@ -2231,6 +2231,91 @@
             },
             "iconClass" : "fa fa-database",
             "type" : "Managed Object"
+        },
+        {
+            "name" : "obTppSsa",
+            "schema" : {
+                "$schema" : "http://forgerock.org/json-schema#",
+                "type" : "object",
+                "title" : "OBTppSsa",
+                "description" : "OB TPP Software Statement Assertion",
+                "icon" : "fa-suitcase",
+                "properties" : {
+                    "ssa" : {
+                        "title" : "Software Statement Assertion",
+                        "type" : "string",
+                        "viewable" : true,
+                        "searchable" : true,
+                        "userEditable" : true,
+                        "description" : null,
+                        "minLength" : null,
+                        "isVirtual" : false,
+                        "policies" : [
+                            {
+                                "policyId" : "unique",
+                                "params" : { }
+                            }
+                        ]
+                    },
+                    "obTpp" : {
+                        "description" : "OB TPP Name",
+                        "title" : "OB TPP Name",
+                        "viewable" : true,
+                        "searchable" : false,
+                        "userEditable" : false,
+                        "policies" : [ ],
+                        "returnByDefault" : false,
+                        "minLength" : null,
+                        "type" : "relationship",
+                        "reverseRelationship" : true,
+                        "reversePropertyName" : "ssas",
+                        "validate" : false,
+                        "properties" : {
+                            "_ref" : {
+                                "type" : "string"
+                            },
+                            "_refProperties" : {
+                                "type" : "object",
+                                "properties" : {
+                                    "_id" : {
+                                        "type" : "string",
+                                        "required" : false,
+                                        "propName" : "_id"
+                                    }
+                                }
+                            }
+                        },
+                        "resourceCollection" : [
+                            {
+                                "path" : "managed/obTpp",
+                                "label" : "ObTpp",
+                                "query" : {
+                                    "queryFilter" : "true",
+                                    "fields" : [
+                                        "name"
+                                    ],
+                                    "sortKeys" : [ ]
+                                }
+                            }
+                        ]
+                    },
+                    "_id" : {
+                        "title" : null,
+                        "type" : "string",
+                        "viewable" : true,
+                        "searchable" : true,
+                        "userEditable" : true
+                    }
+                },
+                "order" : [
+                    "ssa",
+                    "obTpp",
+                    "_id"
+                ],
+                "required" : [ ]
+            },
+            "iconClass" : "fa fa-database",
+            "type" : "Managed Object"
         }
 
 
