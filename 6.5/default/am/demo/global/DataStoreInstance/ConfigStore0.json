@@ -1,0 +1,26 @@
+{
+  "metadata" : {
+    "realm" : null,
+    "amsterVersion" : "6.5.1",
+    "entityType" : "DataStoreInstance",
+    "entityId" : "ConfigStore0",
+    "pathParams" : { }
+  },
+  "data" : {
+    "_id" : "ConfigStore0",
+    "bindDN" : "cn=Directory Manager",
+    "maximumConnectionPool" : 10,
+    "bindPassword" : null,
+    "bindPassword-encrypted" : "AAAAA0FFUwIQG4vvWy/o0dMeFykcJJBFkCdqnutuwnFxGPawJ/bm3VyrQRsCQXUoCQ==",
+    "affinityEnabled" : false,
+    "useStartTLS" : false,
+    "minimumConnectionPool" : 1,
+    "serverUrls" : [ "configstore-0.configstore:1389" ],
+    "useSsl" : false,
+    "_type" : {
+      "_id" : "config",
+      "name" : "Configuration Instance",
+      "collection" : true
+    }
+  }
+}

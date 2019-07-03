@@ -19,7 +19,7 @@
     "jwksUri" : "https://obie-rcs-backend.psd2acceldemo.fridam.aeet-forgerock.com/api/rcs/consent/jwk_pub",
     "remoteConsentRequestEncryptionAlgorithm" : "RSA-OAEP-256",
     "userpassword" : null,
-    "userpassword-encrypted" : "AAAAA0FFUwIQPKkzWOxBYEyBGdK8TQDLD643VyAf4EQrxFRSdpwRk9YWuZj/A4KBQw==",
+    "userpassword-encrypted" : "AAAAA0FFUwIQa85mBU2SaX4Kvf3d3WqlCsTW8oWl6+YfENxu7TYiGyJTcRCtjXSfRA==",
     "jwksCacheTimeout" : 0,
     "remoteConsentRedirectUrl" : "https://obie-rcs-frontend.psd2acceldemo.fridam.aeet-forgerock.com/",
     "publicKeyLocation" : "jwks_uri",
