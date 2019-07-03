@@ -8,22 +8,27 @@ build:
     context: ../idm
   tagPolicy:
     sha256: {}
-  local:
-    push: false
 deploy:
   helm:
     releases:
     - name: sk-frconfig
-      chartPath: helm/frconfig
+      chartPath: forgeops/helm/frconfig
       setValues:
         domain: forgeops.com
         certmanager.acme: false
         certmanager.issuer: ca-issuer
         certmanager.issuerKind: Issuer
 
-    - name: sk-amster
-      chartPath: helm/amster
+    - name: sk-userstore
+      chartPath: forgeops/helm/ds
       valuesFiles:
+      - forgeops/samples/config/ds-shared-repo/userstore.yaml
+      - userstore-values.yaml
+
+    - name: sk-amster
+      chartPath: forgeops/helm/amster
+      valuesFiles:
+      - forgeops/samples/config/ds-shared-repo/amster.yaml
       - amster-values.yaml
       values:
         image: gcr.io/engineering-devops/skaffold/idm-am-common-user/amster
@@ -31,8 +36,9 @@ deploy:
         helm: {}
 
     - name: sk-idm
-      chartPath: helm/openidm
+      chartPath: forgeops/helm/openidm
       valuesFiles:
+      - forgeops/samples/config/ds-shared-repo/openidm.yaml
       - idm-values.yaml
       values:
         image: gcr.io/engineering-devops/skaffold/idm-am-common-user/idm
@@ -40,11 +46,7 @@ deploy:
         helm: {}
 
     - name: sk-openam
-      chartPath: helm/openam
+      chartPath: forgeops/helm/openam
       valuesFiles:
+      - forgeops/samples/config/ds-shared-repo/openam.yaml
       - openam-values.yaml
-
-    - name: sk-userstore
-      chartPath: helm/ds
-      valuesFiles:
-      - userstore-values.yaml

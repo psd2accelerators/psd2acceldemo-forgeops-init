@@ -1,0 +1,84 @@
+{
+  "metadata" : {
+    "realm" : "/openbanking",
+    "amsterVersion" : "6.5.1",
+    "entityType" : "OAuth2Clients",
+    "entityId" : "a1214622-cd26-424f-ac94-128116d9429d",
+    "pathParams" : { }
+  },
+  "data" : {
+    "_id" : "a1214622-cd26-424f-ac94-128116d9429d",
+    "signEncOAuth2ClientConfig" : {
+      "idTokenEncryptionMethod" : "A128CBC-HS256",
+      "jwkSet" : null,
+      "idTokenEncryptionAlgorithm" : "RSA-OAEP-256",
+      "userinfoResponseFormat" : "JSON",
+      "mTLSTrustedCert" : null,
+      "jwksCacheTimeout" : 3600000,
+      "userinfoSignedResponseAlg" : null,
+      "requestParameterEncryptedAlg" : "RSA-OAEP-256",
+      "tokenEndpointAuthSigningAlgorithm" : "PS256",
+      "mTLSSubjectDN" : null,
+      "idTokenEncryptionEnabled" : false,
+      "userinfoEncryptedResponseEncryptionAlgorithm" : null,
+      "publicKeyLocation" : "jwks_uri",
+      "mTLSCertificateBoundAccessTokens" : false,
+      "requestParameterEncryptedEncryptionAlgorithm" : "A128CBC-HS256",
+      "jwkStoreCacheMissCacheTime" : 60000,
+      "idTokenSignedResponseAlg" : "PS256",
+      "idTokenPublicEncryptionKey" : null,
+      "userinfoEncryptedResponseAlg" : null,
+      "jwksUri" : "https://service.directory.ob.forgerock.financial:443/api/software-statement/5ce566ca51304b001858a7b7/application/jwk_uri",
+      "requestParameterSignedAlg" : "PS256",
+      "clientJwtPublicKey" : null
+    },
+    "advancedOAuth2ClientConfig" : {
+      "grantTypes" : [ "refresh_token", "client_credentials", "authorization_code" ],
+      "updateAccessToken" : "Akq-RQ4bfsopuOxdA_d_aqzxYhk",
+      "requestUris" : [ ],
+      "clientUri" : [ ],
+      "mixUpMitigation" : false,
+      "logoUri" : [ ],
+      "tokenEndpointAuthMethod" : "private_key_jwt",
+      "sectorIdentifierUri" : null,
+      "isConsentImplied" : false,
+      "contacts" : [ ],
+      "responseTypes" : [ "code id_token" ],
+      "policyUri" : [ ],
+      "descriptions" : [ ],
+      "subjectType" : "public",
+      "name" : [ ]
+    },
+    "coreOpenIDClientConfig" : {
+      "jwtTokenLifetime" : 0,
+      "clientSessionUri" : null,
+      "postLogoutRedirectUri" : [ ],
+      "defaultMaxAge" : 1,
+      "claims" : [ ],
+      "defaultAcrValues" : [ ],
+      "defaultMaxAgeEnabled" : false
+    },
+    "coreOAuth2ClientConfig" : {
+      "userpassword" : null,
+      "userpassword-encrypted" : "AAAAA0FFUwIQmUdabPjb4g5ExLGkAiq5THOSRKu9REkxgXlt3ZmPro9UGDWYaqNVo9E0SjAv+5l8aPFdx1IwiW5lSgs/w858KxC5yUfpkqphiG386WqWKNEYKlAVPC1H2TCfycwkElJpeyvXIMMFvhztRaDTlxx56w==",
+      "authorizationCodeLifetime" : 0,
+      "accessTokenLifetime" : 0,
+      "defaultScopes" : [ ],
+      "clientName" : [ "TPP ISS Demo Dani" ],
+      "clientType" : "Confidential",
+      "scopes" : [ "openid", "payments", "accounts" ],
+      "agentgroup" : null,
+      "refreshTokenLifetime" : 0,
+      "redirectionUris" : [ "https://www.google.com", "https://www.certification.openid.net/test/a/ForgeRockAssets/callback", "https://www.certification.openid.net/test/a/ForgeRockAssets/GFxenzmlUj", "https://www.certification.openid.net/test/a/ForgeRockAssets/rDRes1ibLE", "https://www.certification.openid.net/test/a/ForgeRockAssets", "https://www.certification.openid.net/test/a/ForgeRockAssets/nLAk9I4szp" ],
+      "status" : "Active"
+    },
+    "coreUmaClientConfig" : {
+      "claimsRedirectionUris" : [ ]
+    },
+    "_type" : {
+      "_id" : "OAuth2Client",
+      "name" : "OAuth2 Clients",
+      "collection" : true
+    }
+  }
+}
