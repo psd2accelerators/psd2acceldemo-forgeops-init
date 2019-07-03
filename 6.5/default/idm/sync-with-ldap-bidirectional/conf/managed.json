@@ -2056,10 +2056,8 @@
                                 "policyId" : "unique",
                                 "params" : { }
                             }
-                        ],
-                        "encryption" : {
-                            "purpose" : null
-                        }
+                        ]
+                       
                     },
                     "certId" : {
                         "title" : "Certificate Identifier",
