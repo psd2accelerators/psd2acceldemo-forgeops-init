@@ -42,13 +42,14 @@
       "sun-idrepo-ldapv3-config-max-result" : 1000,
       "sun-idrepo-ldapv3-config-search-scope" : "SCOPE_SUB",
       "sun-idrepo-ldapv3-config-time-limit" : 10,
+      "sun-idrepo-ldapv3-config-connection_pool_min_size" : 1,
       "openam-idrepo-ldapv3-heartbeat-interval" : 10,
       "sun-idrepo-ldapv3-config-ldap-server" : [ "configstore-0.configstore:1389" ],
       "openam-idrepo-ldapv3-heartbeat-timeunit" : "SECONDS",
       "sun-idrepo-ldapv3-config-organization_name" : "ou=identities",
       "sun-idrepo-ldapv3-config-connection-mode" : "LDAP",
       "sun-idrepo-ldapv3-config-authpw" : null,
-      "sun-idrepo-ldapv3-config-authpw-encrypted" : "AAAAA0FFUwIQTVaPh0R96P3nBoV0LueooOHq6nu0n+3WGNkjKsHNAvKZjAePFSX/Gg=="
+      "sun-idrepo-ldapv3-config-authpw-encrypted" : "AAAAA0FFUwIQSBtvmU/Fe2ZrSKzgvoEuY+c7agJuXeGd9L5+gXNFY6DNVyFrgaAA0g=="
     },
     "cachecontrol" : {
       "sun-idrepo-ldapv3-dncache-enabled" : true,

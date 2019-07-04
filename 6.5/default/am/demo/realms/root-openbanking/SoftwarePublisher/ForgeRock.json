@@ -17,7 +17,7 @@
     "agentgroup" : null,
     "issuer" : "ForgeRock",
     "userpassword" : null,
-    "userpassword-encrypted" : "AAAAA0FFUwIQkz0BuPY6Fby5zFroaUWr00GAlng8FvWT9sutBKpo7V5ABg70hzSNxw==",
+    "userpassword-encrypted" : "AAAAA0FFUwIQEA+jM+LKl0+qDcms7eSaW1GiPhijH4MnwpmMNpUALD4q4xpYCACA1cymkIfGCrvBBmB+xQ9L7Rj2rccaNkdjxbvc3Ta43gkC4LOhdM0KIbDuNWqx01ovqiC3BVK2dpMlFQtap36z8/FT/8PRybgBUyYgCYe2v+ZI/5Y63wzzGZgv2hs/Dh04ZTkpGuuW42LcfzWA4vAvq58=",
     "_type" : {
       "_id" : "SoftwarePublisher",
       "name" : "OAuth2 Software Publisher",

@@ -3,11 +3,11 @@
     "realm" : "/openbanking",
     "amsterVersion" : "6.5.1",
     "entityType" : "OAuth2Clients",
-    "entityId" : "ig_agent_oauth2",
+    "entityId" : "test",
     "pathParams" : { }
   },
   "data" : {
-    "_id" : "ig_agent_oauth2",
+    "_id" : "test",
     "signEncOAuth2ClientConfig" : {
       "idTokenEncryptionMethod" : "A128CBC-HS256",
       "jwkSet" : null,
@@ -33,20 +33,20 @@
       "clientJwtPublicKey" : null
     },
     "advancedOAuth2ClientConfig" : {
-      "grantTypes" : [ "authorization_code", "client_credentials" ],
+      "grantTypes" : [ "authorization_code", "password" ],
       "updateAccessToken" : null,
-      "requestUris" : [ "http://www.google.com" ],
+      "requestUris" : [ ],
       "clientUri" : [ ],
       "mixUpMitigation" : false,
       "logoUri" : [ ],
-      "tokenEndpointAuthMethod" : "client_secret_basic",
+      "tokenEndpointAuthMethod" : "client_secret_post",
       "sectorIdentifierUri" : null,
       "isConsentImplied" : false,
       "contacts" : [ ],
       "responseTypes" : [ "code", "token", "id_token", "code token", "token id_token", "code id_token", "code token id_token", "device_code", "device_code id_token" ],
       "policyUri" : [ ],
       "descriptions" : [ ],
-      "subjectType" : "Public",
+      "subjectType" : "Pairwise",
       "name" : [ ]
     },
     "coreOpenIDClientConfig" : {
@@ -60,14 +60,13 @@
     },
     "coreOAuth2ClientConfig" : {
       "userpassword" : null,
-      "userpassword-encrypted" : "AAAAA0FFUwIQFr9X1xnKT+Sbv1pyn/BVRmTSbKV+2L3AVymVsCgPtGs6S3cL4qunLQ==",
+      "userpassword-encrypted" : "AAAAA0FFUwIQOO5iQI3PhoLUiGKuYe1KqB2uB1JZOPeRd0SSsqSYH8OgWJPb4sphdQ==",
       "authorizationCodeLifetime" : 0,
       "accessTokenLifetime" : 0,
-      "defaultScopes" : [ "payments" ],
+      "defaultScopes" : [ ],
       "clientName" : [ ],
       "clientType" : "Confidential",
-      "scopes" : [ "payments", "am-introspect-all-tokens" ],
-      "agentgroup" : null,
+      "scopes" : [ "openid" ],
       "refreshTokenLifetime" : 0,
       "redirectionUris" : [ "https://www.google.com" ],
       "status" : "Active"
