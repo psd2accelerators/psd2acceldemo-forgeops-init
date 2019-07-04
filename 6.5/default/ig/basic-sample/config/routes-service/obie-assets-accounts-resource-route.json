@@ -52,7 +52,7 @@
     "name" : "AmService-OBIE",
     "type" : "AmService",
     "config" : {
-      "url" : "https://login.iamcloud.xyz",
+      "url" : "https://login.psd2accelerators.fridam.aeet-forgerock.com",
       "realm" : "/openbanking",
       "ssoTokenHeader" : "iPlanetDirectoryPro",
       "version" : "6.5.1",
@@ -196,7 +196,7 @@
         "name" : "UserInfoVerificationFilter",
         "type" : "UserInfoVerificationFilter",
         "config" : {
-          "userInfoURL" : "https://login.iamcloud.xyz/oauth2/realms/root/realms/openbanking/userinfo"
+          "userInfoURL" : "https://login.psd2accelerators.fridam.aeet-forgerock.com/oauth2/realms/root/realms/openbanking/userinfo"
         }
       }, {
         "name" : "OAuth2ResourceServerFilter-OBIE",
@@ -209,7 +209,7 @@
             "name" : "token-resolver-1",
             "type" : "TokenIntrospectionAccessTokenResolver",
             "config" : {
-              "endpoint" : "https://login.iamcloud.xyz/oauth2/realms/root/realms/openbanking/introspect",
+              "endpoint" : "https://login.psd2accelerators.fridam.aeet-forgerock.com/oauth2/realms/root/realms/openbanking/introspect",
               "providerHandler" : {
                 "type" : "Chain",
                 "config" : {
@@ -259,7 +259,7 @@
             "sub" : "${contexts.oauth2.accessToken.info.sub}",
             "tpp" : "${toString(contexts.oauth2.accessToken.info.client_id).concat(attributes.tppId)}",
             "PermissionType" : "${attributes.permissionType}",
-            "iss" : "http://login.iamcloud.xyz:80/oauth2/realms/root/realms/openbanking"
+            "iss" : "http://login.psd2accelerators.fridam.aeet-forgerock.com:80/oauth2/realms/root/realms/openbanking"
           },
           "amService" : "AmService-OBIE"
         }
