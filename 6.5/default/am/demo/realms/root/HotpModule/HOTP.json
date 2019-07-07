@@ -19,11 +19,12 @@
     "smsGatewayClass" : "com.sun.identity.authentication.modules.hotp.DefaultSMSGatewayImpl",
     "smtpHostname" : "smtp.gmail.com",
     "authenticationLevel" : 0,
+    "mobileCarrierAttribute" : "",
     "otpValidityDuration" : 5,
     "userProfileTelephoneAttribute" : "telephoneNumber",
     "smtpFromAddress" : "no-reply@openam.org",
     "smtpUserPassword" : null,
-    "smtpUserPassword-encrypted" : "AAAAA0FFUwIQFCzvw4iWgDAivJFAlbi+2oyZUZf657kn9dy38FvNvmlsGcppFcoPog==",
+    "smtpUserPassword-encrypted" : "AAAAA0FFUwIQ+S/0jkn/479baVNu32FyUpvN7pyrSINacamsoOWGSGwdpXVV9jDC6A==",
     "_type" : {
       "_id" : "hotp",
       "name" : "HOTP",

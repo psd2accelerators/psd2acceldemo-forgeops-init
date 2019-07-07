@@ -9,8 +9,8 @@
   "data" : {
     "_id" : "",
     "defaults" : {
-      "policyDataStoreId" : "ConfigStore0",
-      "applicationDataStoreId" : "ConfigStore0"
+      "policyDataStoreId" : "fd270e31-1788-4193-8734-eb2d500c47f3",
+      "applicationDataStoreId" : "fd270e31-1788-4193-8734-eb2d500c47f3"
     },
     "_type" : {
       "_id" : "DataStoreService",

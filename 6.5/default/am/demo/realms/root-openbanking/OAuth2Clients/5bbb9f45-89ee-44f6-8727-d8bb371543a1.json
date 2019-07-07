@@ -60,7 +60,7 @@
     },
     "coreOAuth2ClientConfig" : {
       "userpassword" : null,
-      "userpassword-encrypted" : "AAAAA0FFUwIQCkzMP95+vIqYbtq/b/KVICcFUIHKa58TiIipyG52rU16SHJIRv6xVNPmxH7SfD7JJ2RCTeG/lTyhz/OpaAvkrFCI2RUCNkRO4wrw08YrBe+1rsIzp5Ubwp9i0qKby/XmQfZ8whONIkopOGshSGXMZA==",
+      "userpassword-encrypted" : "AAAAA0FFUwIQu1D2GhIdH330pA5knUN5fes90yhiGqGRgDYpL79B+9qXEpsAKkcAcbm6T++qWJBjkFDpe9qNwYuZ2/bzaL/+wK1OnvQpfMWu1xL2y8yMdtnuu9GJznWP2fyTOr7T3JIJSwvpQnrlkFKiCCIY09nVdQ==",
       "authorizationCodeLifetime" : 0,
       "accessTokenLifetime" : 0,
       "defaultScopes" : [ ],
