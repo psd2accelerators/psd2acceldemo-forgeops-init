@@ -1,0 +1,17 @@
+{
+  "metadata" : {
+    "realm" : "/openbanking",
+    "amsterVersion" : "6.5.1",
+    "entityType" : "UsernameCollector",
+    "entityId" : "8bb91ce4-755d-4c48-a3cf-1fd9959b2449",
+    "pathParams" : { }
+  },
+  "data" : {
+    "_id" : "8bb91ce4-755d-4c48-a3cf-1fd9959b2449",
+    "_type" : {
+      "_id" : "UsernameCollectorNode",
+      "name" : "Username Collector",
+      "collection" : true
+    }
+  }
+}

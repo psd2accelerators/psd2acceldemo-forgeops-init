@@ -27,7 +27,7 @@
       "oidcClaimsScript" : "a081a4b2-f255-4dea-8bfe-7c7c5384279c"
     },
     "advancedOAuth2Config" : {
-      "supportedScopes" : [ "openid" ],
+      "supportedScopes" : [ "openid", "payments", "accounts" ],
       "codeVerifierEnforced" : "false",
       "tokenSigningAlgorithm" : "HS256",
       "authenticationAttributes" : [ "uid" ],
@@ -47,7 +47,7 @@
       "storeOpsTokens" : true,
       "defaultACR" : [ ],
       "supportedRequestParameterEncryptionEnc" : [ "A256GCM", "A192GCM", "A128GCM", "A128CBC-HS256", "A192CBC-HS384", "A256CBC-HS512" ],
-      "claimsParameterSupported" : false,
+      "claimsParameterSupported" : true,
       "amrMappings" : { },
       "supportedUserInfoEncryptionEnc" : [ "A256GCM", "A192GCM", "A128GCM", "A128CBC-HS256", "A192CBC-HS384", "A256CBC-HS512" ],
       "alwaysAddClaimsToToken" : false,
@@ -58,14 +58,17 @@
       "supportedRequestParameterSigningAlgorithms" : [ "PS384", "RS384", "ES384", "HS256", "HS512", "ES256", "RS256", "HS384", "ES512", "PS256", "PS512", "RS512" ],
       "supportedUserInfoEncryptionAlgorithms" : [ "RSA-OAEP", "RSA-OAEP-256", "A128KW", "A256KW", "RSA1_5", "dir", "A192KW" ],
       "supportedTokenEndpointAuthenticationSigningAlgorithms" : [ "PS384", "RS384", "ES384", "HS256", "HS512", "ES256", "RS256", "HS384", "ES512", "PS256", "PS512", "RS512" ],
-      "loaMapping" : { }
+      "loaMapping" : {
+        "urn:openbanking:psd2:sca" : "ob-sca",
+        "urn:openbanking:psd2:ca" : "ob-sca"
+      }
     },
     "clientDynamicRegistrationConfig" : {
-      "dynamicClientRegistrationSoftwareStatementRequired" : false,
+      "dynamicClientRegistrationSoftwareStatementRequired" : true,
       "dynamicClientRegistrationScope" : "dynamic_client_registration",
-      "requiredSoftwareStatementAttestedAttributes" : [ "redirect_uris" ],
+      "requiredSoftwareStatementAttestedAttributes" : [ ],
       "generateRegistrationAccessTokens" : true,
-      "allowDynamicRegistration" : false
+      "allowDynamicRegistration" : true
     },
     "cibaConfig" : {
       "supportedCibaSigningAlgorithms" : [ "ES256", "PS256" ],
@@ -73,13 +76,14 @@
       "cibaMinimumPollingInterval" : 2
     },
     "consent" : {
-      "enableRemoteConsent" : false,
+      "enableRemoteConsent" : true,
       "supportedRcsRequestSigningAlgorithms" : [ "PS384", "RS384", "ES384", "HS256", "HS512", "ES256", "RS256", "HS384", "ES512", "PS256", "PS512", "RS512" ],
       "supportedRcsResponseSigningAlgorithms" : [ "PS384", "RS384", "ES384", "HS256", "HS512", "ES256", "RS256", "HS384", "ES512", "PS256", "PS512", "RS512" ],
       "clientsCanSkipConsent" : false,
       "supportedRcsRequestEncryptionAlgorithms" : [ "RSA-OAEP", "RSA-OAEP-256", "A128KW", "RSA1_5", "A256KW", "dir", "A192KW" ],
       "supportedRcsResponseEncryptionMethods" : [ "A256GCM", "A192GCM", "A128GCM", "A128CBC-HS256", "A192CBC-HS384", "A256CBC-HS512" ],
       "supportedRcsRequestEncryptionMethods" : [ "A256GCM", "A192GCM", "A128GCM", "A128CBC-HS256", "A192CBC-HS384", "A256CBC-HS512" ],
+      "remoteConsentServiceId" : "forgerock-rcs",
       "supportedRcsResponseEncryptionAlgorithms" : [ "RSA-OAEP", "RSA-OAEP-256", "A128KW", "A256KW", "RSA1_5", "dir", "A192KW" ]
     },
     "deviceCodeConfig" : {

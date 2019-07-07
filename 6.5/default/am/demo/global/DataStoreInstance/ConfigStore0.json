@@ -11,7 +11,7 @@
     "bindDN" : "cn=Directory Manager",
     "maximumConnectionPool" : 10,
     "bindPassword" : null,
-    "bindPassword-encrypted" : "AAAAA0FFUwIQG4vvWy/o0dMeFykcJJBFkCdqnutuwnFxGPawJ/bm3VyrQRsCQXUoCQ==",
+    "bindPassword-encrypted" : "AAAAA0FFUwIQWazSNdH53eXPek+uN/qd+nN9W4HC7Zujt9AIcqJgmoWKBP3Q0Rj+LA==",
     "affinityEnabled" : false,
     "useStartTLS" : false,
     "minimumConnectionPool" : 1,

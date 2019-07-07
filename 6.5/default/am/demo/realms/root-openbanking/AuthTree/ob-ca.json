@@ -1,0 +1,37 @@
+{
+  "metadata" : {
+    "realm" : "/openbanking",
+    "amsterVersion" : "6.5.1",
+    "entityType" : "AuthTree",
+    "entityId" : "ob-ca",
+    "pathParams" : { }
+  },
+  "data" : {
+    "_id" : "ob-ca",
+    "nodes" : {
+      "493790e4-dd98-49fb-a5b0-2fbb716cb514" : {
+        "displayName" : "Data Store Decision",
+        "nodeType" : "DataStoreDecisionNode",
+        "connections" : {
+          "true" : "70e691a5-1e33-4ac3-a356-e7b6d60d92e0",
+          "false" : "e301438c-0bd0-429c-ab0c-66126501069a"
+        }
+      },
+      "288c45bb-3a61-40ad-99df-33b603e46aaf" : {
+        "displayName" : "Password Collector",
+        "nodeType" : "PasswordCollectorNode",
+        "connections" : {
+          "outcome" : "493790e4-dd98-49fb-a5b0-2fbb716cb514"
+        }
+      },
+      "8bb91ce4-755d-4c48-a3cf-1fd9959b2449" : {
+        "displayName" : "Username Collector",
+        "nodeType" : "UsernameCollectorNode",
+        "connections" : {
+          "outcome" : "288c45bb-3a61-40ad-99df-33b603e46aaf"
+        }
+      }
+    },
+    "entryNodeId" : "8bb91ce4-755d-4c48-a3cf-1fd9959b2449"
+  }
+}
