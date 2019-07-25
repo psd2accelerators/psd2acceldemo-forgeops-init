@@ -1,0 +1,18 @@
+{
+  "metadata" : {
+    "realm" : "/openbanking",
+    "amsterVersion" : "6.5.1",
+    "entityType" : "ModifyAuthLevel",
+    "entityId" : "d578165e-0d59-483d-9b65-8714e7fee705",
+    "pathParams" : { }
+  },
+  "data" : {
+    "_id" : "d578165e-0d59-483d-9b65-8714e7fee705",
+    "authLevelIncrement" : 2,
+    "_type" : {
+      "_id" : "ModifyAuthLevelNode",
+      "name" : "Modify Auth Level",
+      "collection" : true
+    }
+  }
+}

@@ -35,7 +35,7 @@
     "coreOAuth2ClientConfig" : {
       "clientType" : "Confidential",
       "userpassword" : null,
-      "userpassword-encrypted" : "AAAAA0FFUwIQ4V9+lvgzFDZG5j21N1cSKR7tyr3UvPEHCdKaNUSg8C819OF0oIBm0pOM+nH9Uvo0pxX5sQMnS62Faso6ARorJgWxSEFOJ/rEAtGwbib99q2leRSt6dGHM7ucg6wYFS4nA4g8py1Kf7AfYL3WaB2zCA==",
+      "userpassword-encrypted" : "AAAAA0FFUwIQQlS0g2fM4wg+RJTIcxr8pCmnI5Cuz0mu20n9djsAS20CP1teVM1uaNItkPjK/HaJrHFuJjbXIV5N3bG6f2Vyj+8U1YCVibl/rmEvwon7cKfCH7vGC/DxSGqIMzQnRA1rv0HmydEAyJIWfFgPUU/gZw==",
       "scopes" : [ "openid", "payments", "accounts" ],
       "authorizationCodeLifetime" : 0,
       "accessTokenLifetime" : 0,

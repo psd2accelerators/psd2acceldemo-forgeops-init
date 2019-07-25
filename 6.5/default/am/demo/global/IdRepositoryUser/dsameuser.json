@@ -9,7 +9,7 @@
   "data" : {
     "_id" : "dsameuser",
     "userPassword" : null,
-    "userPassword-encrypted" : "AAAAA0FFUwIQzHKFm3kq3pT5jKVSEhZtkMh2klcp2csEZ9qds1UD5SQO4BL6J0Gj0kNH10ySwhhpi0M+Qs59+tfkjeeVU1FtajmgKTRSrzjnfRl7dL31xsR7f7hDGYpTkEDCl0Ce997b4XztXQWmGCo/xS5tKN2TW2rhEMFru0wXtu1ZuZauQGsq+TvnbJD1IU6S+5tKohuf4u4kitNfCpo=",
+    "userPassword-encrypted" : "AAAAA0FFUwIQAi5S9G86KlC4cPkDrdh/aSB+NG6R7Kv9oolGeQUIdr97UJmSmGgHatW7/g5QwG/njemj/Ki56CEFC3dEpZpQs90eIQbzHnJrmzHrAQHtWmZU82d4XbHiBOPq5IPDsKDhKVstM5+bk9RW7h2QvopBaBK56bZWOG1kdlHwxSSr0BscZZDBg9OphYW4uMkjlpXeaXHF46Si9Fo=",
     "roles" : [ ],
     "dn" : "cn=dsameuser,ou=DSAME Users,",
     "inetUserStatus" : "Active",
