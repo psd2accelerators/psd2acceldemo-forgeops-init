@@ -13,8 +13,8 @@
         "displayName" : "Data Store Decision",
         "nodeType" : "DataStoreDecisionNode",
         "connections" : {
-          "true" : "70e691a5-1e33-4ac3-a356-e7b6d60d92e0",
-          "false" : "e301438c-0bd0-429c-ab0c-66126501069a"
+          "false" : "e301438c-0bd0-429c-ab0c-66126501069a",
+          "true" : "5bcbb9f7-385d-4ca1-a46e-8de2c319a938"
         }
       },
       "288c45bb-3a61-40ad-99df-33b603e46aaf" : {
@@ -29,6 +29,13 @@
         "nodeType" : "UsernameCollectorNode",
         "connections" : {
           "outcome" : "288c45bb-3a61-40ad-99df-33b603e46aaf"
+        }
+      },
+      "5bcbb9f7-385d-4ca1-a46e-8de2c319a938" : {
+        "displayName" : "Modify Auth Level",
+        "nodeType" : "ModifyAuthLevelNode",
+        "connections" : {
+          "outcome" : "70e691a5-1e33-4ac3-a356-e7b6d60d92e0"
         }
       }
     },

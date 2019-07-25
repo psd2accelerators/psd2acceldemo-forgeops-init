@@ -14,7 +14,7 @@
         "nodeType" : "DataStoreDecisionNode",
         "connections" : {
           "false" : "e301438c-0bd0-429c-ab0c-66126501069a",
-          "true" : "70e691a5-1e33-4ac3-a356-e7b6d60d92e0"
+          "true" : "d578165e-0d59-483d-9b65-8714e7fee705"
         }
       },
       "c0eaca53-ba6d-411f-8408-bc090c3bf16d" : {
@@ -29,6 +29,13 @@
         "nodeType" : "PasswordCollectorNode",
         "connections" : {
           "outcome" : "4ce14638-0753-455e-b733-10f0d8ac8093"
+        }
+      },
+      "d578165e-0d59-483d-9b65-8714e7fee705" : {
+        "displayName" : "Modify Auth Level",
+        "nodeType" : "ModifyAuthLevelNode",
+        "connections" : {
+          "outcome" : "70e691a5-1e33-4ac3-a356-e7b6d60d92e0"
         }
       }
     },

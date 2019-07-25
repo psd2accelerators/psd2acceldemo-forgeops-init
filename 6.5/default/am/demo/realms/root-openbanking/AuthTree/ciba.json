@@ -1,0 +1,14 @@
+{
+  "metadata" : {
+    "realm" : "/openbanking",
+    "amsterVersion" : "6.5.1",
+    "entityType" : "AuthTree",
+    "entityId" : "ciba",
+    "pathParams" : { }
+  },
+  "data" : {
+    "_id" : "ciba",
+    "nodes" : { },
+    "entryNodeId" : "e301438c-0bd0-429c-ab0c-66126501069a"
+  }
+}
