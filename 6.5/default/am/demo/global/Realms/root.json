@@ -11,6 +11,6 @@
     "parentPath" : null,
     "active" : true,
     "name" : "/",
-    "aliases" : [ "login.psd2accelerators.fridam.aeet-forgerock.com", "am-config", "openam" ]
+    "aliases" : [ "login.psd2acceldemo.fridam.aeet-forgerock.com", "am-config", "openam" ]
   }
 }
