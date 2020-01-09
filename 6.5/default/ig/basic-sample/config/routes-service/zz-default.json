@@ -3,7 +3,7 @@
     "type": "StaticResponseHandler",
     "config" : {
       "status": 200,
-      "entity": "toojTBCP97Er-mWZTAqUFEDIyYrF6bwZgXvjGXoexAQ.WbaCY4JFPyvDQ2HBb6PLJ957Lv7qoNaIgNRQixBRJjE"
+      "entity": "wi_hantcT0tcvFiSbzNyPVJ656UGrCLjxuageKi-PwE.WSbnd8nlyQsRTXJVGMntN6yqGiJb5WvMBVyjX1suHUM"
     },
     "monitor": {
       "enabled": true
